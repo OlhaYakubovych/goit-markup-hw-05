@@ -11,17 +11,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <!--Шапка сайта-->
 <body class="page">
     <header class="header">
         <div class="container header-div">
-        <a href="./index.html" class="header-logo link"><span class="logo-accent">Web</span><span class="logo-second-accent">Studio</span></a>
+        <a href="./index.html" class="header-logo link animate__animated animate__bounce"><span class="logo-accent">Web</span><span class="logo-second-accent">Studio</span></a>
         <nav class="header-nav">
             <ul class="list header-nav-list">
-                <li class="header-nav-item"><a class="link header-nav-link" href="./index.html">Студия</a></li>
-                <li class="header-nav-item"><a class="link header-nav-link" href="./portfolio.html">Портфолио</a></li>
-                <li class="header-nav-item"><a class="link header-nav-link" href="">Контакты</a></li>
+                <li class="header-nav-item">
+                    <a class="link header-nav-link current" href="./index.html">Студия</a></li>
+                <li class="header-nav-item">
+                    <a class="link header-nav-link" href="./portfolio.html">Портфолио</a></li>
+                <li class="header-nav-item">
+                    <a class="link header-nav-link" href="">Контакты</a></li>
             </ul>
         </nav>
             <ul class="list header-contacts-list">
@@ -89,9 +93,21 @@
             <div class="container about-container">
             <h2 class="about-title">Чем мы занимаемся</h2>
             <ul class="about-list list">
-                <li class="about-item"><img src="./images/img.jpg" width="370" height="294" alt="Комп'ютер"/></li>
-                <li class="about-item"><img src="./images/img-2.jpg" width="370" height="294" alt="Телефон"/></li>
-                <li class="about-item"><img src="./images/img-3.jpg" width="370" height="294" alt="Планшет"/></li>
+                <li class="about-item"><img src="./images/img.jpg" width="370" height="294" alt="Комп'ютер"/>
+                <div class="about-item-div">
+                    <p class="about-item-text">Десктопные приложения</p>
+                </div>
+                </li>
+                <li class="about-item"><img src="./images/img-2.jpg" width="370" height="294" alt="Телефон"/>
+                <div class="about-item-div">
+                    <p class="about-item-text">Мобильные приложения</p>
+                </div>
+                </li>
+                <li class="about-item"><img src="./images/img-3.jpg" width="370" height="294" alt="Планшет"/>
+                <div class="about-item-div">
+                    <p class="about-item-text">Дизайнерские решения</p>
+                </div>
+                </li>
             </ul>
             </div>
         </section>
