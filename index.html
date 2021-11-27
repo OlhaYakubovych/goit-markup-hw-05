@@ -49,7 +49,7 @@
             <section class="section hero">
                 <div class="container hero-div">
                 <h1 class="hero-title">Эффективные решения <br >для вашего бизнеса</h1>
-                <button class="hero-btn" type="button">Заказать услугу</button>
+                <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>
                 </div>
             </section>
             <!--Особенности-->
@@ -93,18 +93,21 @@
             <div class="container about-container">
             <h2 class="about-title">Чем мы занимаемся</h2>
             <ul class="about-list list">
-                <li class="about-item"><img src="./images/img.jpg" width="370" height="294" alt="Комп'ютер"/>
-                <div class="about-item-div">
+                <li class="about-item">
+                    <div class="about-item-div">
+                    <img src="./images/img.jpg" width="370" height="294" alt="Комп'ютер"/>
                     <p class="about-item-text">Десктопные приложения</p>
                 </div>
                 </li>
-                <li class="about-item"><img src="./images/img-2.jpg" width="370" height="294" alt="Телефон"/>
-                <div class="about-item-div">
+                <li class="about-item">
+                    <div class="about-item-div">
+                    <img src="./images/img-2.jpg" width="370" height="294" alt="Телефон"/>
                     <p class="about-item-text">Мобильные приложения</p>
                 </div>
                 </li>
-                <li class="about-item"><img src="./images/img-3.jpg" width="370" height="294" alt="Планшет"/>
-                <div class="about-item-div">
+                <li class="about-item">
+                    <div class="about-item-div">
+                    <img src="./images/img-3.jpg" width="370" height="294" alt="Планшет"/>
                     <p class="about-item-text">Дизайнерские решения</p>
                 </div>
                 </li>
@@ -362,5 +365,15 @@
     </div>
     </div>
     </footer>
+    <div class="backdrop is-hidden " data-modal>
+    <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+            <svg class="modal-close-icon" width="11" height="11" >
+                <use href="./images/icons.svg#icon-Close"></use>
+            </svg>
+        </button>
+    </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
